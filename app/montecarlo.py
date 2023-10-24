@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 def montecarlo(nombreimagen):
-    url = "./imagenesmontecarlo/" + nombreimagen + ".png"
+    url = "app\\imagenesmontecarlo\\" + nombreimagen + ".png"
     
     # Inicializar Pygame
     pygame.init()
