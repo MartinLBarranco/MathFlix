@@ -1,8 +1,8 @@
 import tkinter as tk
-import abrefractales
-import juegoVida
-from collatz import dibujaNHastaUno, dibujaNumIteraciones
-from montecarlo import montecarlo as mont
+from app import abrefractales
+from app import juegoVida
+from app.collatz import dibujaNHastaUno, dibujaNumIteraciones
+from app.montecarlo import montecarlo as mont
 import os
 import typer
 import tkinter as tk
@@ -34,8 +34,8 @@ def abre():
 @app.command()
 def montecarlo():
     nombres_archivos = []
-    for nombre in os.listdir("app\imagenesmontecarlo"):
-        if os.path.isfile(os.path.join("app\imagenesmontecarlo", nombre)):
+    for nombre in os.listdir(".\imagenesmontecarlo"):
+        if os.path.isfile(os.path.join(".\imagenesmontecarlo", nombre)):
             nombres_archivos.append(os.path.splitext(nombre)[0])
     print("FIGURAS DISPONIBLES:\n")
     for elem in nombres_archivos:
@@ -120,8 +120,8 @@ boton23.pack(side=tk.LEFT, padx=10, pady=5)
 
 #Para el método montecarlo
 nombres_archivos = []
-for nombre in os.listdir("app\imagenesmontecarlo"):
-    if os.path.isfile(os.path.join("app\imagenesmontecarlo", nombre)):
+for nombre in os.listdir(".\imagenesmontecarlo"):
+    if os.path.isfile(os.path.join(".\imagenesmontecarlo", nombre)):
         nombres_archivos.append(os.path.splitext(nombre)[0])
 #print("FIGURAS DISPONIBLES:\n")
 #for elem in nombres_archivos:
