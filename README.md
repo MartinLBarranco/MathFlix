@@ -1,4 +1,5 @@
 # MathFlix
+
 Librerias necesarias:
 matplotlib
 pygame
